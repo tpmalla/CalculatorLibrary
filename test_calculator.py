@@ -14,3 +14,9 @@ class TestCalculator:
 
     def test_multiplication(self):
         assert 100 == calculator.multiply(10, 10)
+
+    def test_divide(self):
+        assert 3 == calculator.divide(27, 9)
+
+    # def test_divide_by_zero(self):
+    #     assert Exception("Divide by zero") == calculator.divide(3, 0)
