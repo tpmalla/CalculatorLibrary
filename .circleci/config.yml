@@ -8,6 +8,7 @@ jobs:
     working_directory: ~/repo
 
     steps:
+      # checkout from VCS
       - checkout
       - restore_cache:
           key: deps1-{{ .Branch }}-{{ checksum "requirements.txt"}}
